@@ -1,4 +1,5 @@
 export class Goal {
-    id: number = 0;
-    name: string = "";
+    id: number;
+    name: string;
+    description:string;
 }
