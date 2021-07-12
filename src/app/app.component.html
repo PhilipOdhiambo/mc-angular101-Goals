@@ -1,14 +1,2 @@
 <h1>{{title}}</h1>
-<h3>Main Goal</h3>
-<p>{{goal}}</p>
-
-<h3>Other Goals</h3>
-<ul>
-  <li *ngFor="let goal of goals">
-    {{goal.name}}
-  </li>
-</ul>
-
-<p *ngIf='goals.length > 5'>
-  Your goals are too many
-</p>
+<app-goal></app-goal>
