@@ -20,6 +20,10 @@ export class GoalComponent implements OnInit {
     this.goals[index].showDescription = !this.goals[index].showDescription;
   }
 
+  completeGoal(index) {
+    this.goals.splice(index,1);
+  }
+
 
   constructor() { }
 
