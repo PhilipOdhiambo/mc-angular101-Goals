@@ -5,17 +5,19 @@
     <form>
         <div class="form-group">
             <label for="name">Name</label>
-            <input class="form-control" required id="name" type="text">
+            <input class="form-control" required id="name" type="text" [(ngModel)]="goal.name" name="name">
+          
         </div>
 
         <div class="form-group">
             <label for="description">description</label>
-            <textarea name="" id="description" rows="4" required class="form-control"></textarea>
+            <textarea name="" id="description" [(ngModel)]="goal.description" name="description" rows="4" required class="form-control"></textarea>
+           
         </div>
 
         <div class="form-group">
             <label for="complete">Completion</label>
-            <input id="complete" type="date" required class="form-control">
+            <input id="complete" type="date" [(ngModel)]="goal.completeDate" name="completeDate" required class="form-control">
         </div>
     </form>
 </div>
